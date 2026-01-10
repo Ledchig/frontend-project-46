@@ -17,7 +17,7 @@ jobs:
         
     - run: make install
     - run: make lint
-    - run: npx jest --coverage --coverageReporters=lcov  
+    - run: NODE_OPTIONS=--experimental-vm-modules npx jest --coverage --coverageReporters=lcov  
     
     - name: SonarCloud Scan
       if: success()
