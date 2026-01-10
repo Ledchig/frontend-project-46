@@ -30,3 +30,7 @@ jobs:
           -Dsonar.projectKey=Ledchig_frontend-project-46
           -Dsonar.organization=ledchig
           -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+          -Dsonar.sources=src,bin
+          -Dsonar.tests=__tests__
+          -Dsonar.exclusions=**/node_modules/**,**/__fixtures__/**,package*,eslint*
+
