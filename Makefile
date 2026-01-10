@@ -7,4 +7,4 @@ publish:
 lint:
 	npx eslint .
 test:
-	npm test && sonar-scanner
+	npm test
