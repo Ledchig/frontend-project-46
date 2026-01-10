@@ -1,8 +1,12 @@
-import parse from './parser.js'
+import compare from './compare.js'
+import format from './format.js'
+import parse from './parse.js'
 
-export default (filepath1, filepath2) => {
+const gendiff = (filepath1, filepath2) => {
   const firstData = parse(filepath1)
   const secondData = parse(filepath2)
 
-  return { firstData, secondData }
+  return format(compare(firstData, secondData))
 }
+
+export default gendiff
