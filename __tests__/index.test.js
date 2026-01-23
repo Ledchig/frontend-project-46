@@ -20,6 +20,16 @@ test('default', () => {
   expect(received).toEqual(expected.trim())
 })
 
+test('flat yml', () => {
+  const received = genDiff(
+    getFixturePath('file1.yml'),
+    getFixturePath('file2.yml'),
+  )
+  const expected = readFileSync(getFixturePath('expected-flat-yml.txt'), 'utf8')
+
+  expect(received).toEqual(expected.trim())
+})
+
 test('format unknown type', () => {
   const invalidData = {
     k: {

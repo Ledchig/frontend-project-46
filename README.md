@@ -9,5 +9,9 @@ Gendiff is a program that finds the difference between two files.
 ### Installation
 Clone this repository on your machine and write `make install` in the project directory.
 
-### Example
+### Example with .json
 [![asciicast](https://asciinema.org/a/FAJmUL69DVChKRZF.svg)](https://asciinema.org/a/FAJmUL69DVChKRZF)
+### Example with .yaml
+<script src="https://asciinema.org/a/player.js"></script>
+<asciinema-player src="./__fixtures__/diff-yml.cast" autoplay loop speed="2" cols="80" rows="20"></asciicast-player>
+
